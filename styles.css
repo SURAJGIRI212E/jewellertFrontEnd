@@ -1,0 +1,170 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: rgba(231, 218, 219, 0.961);
+    margin-top: 2rem;
+    font-size: 25px;
+
+    margin-bottom: 2rem;
+    margin-left: 5%;
+    margin-right: 5%;
+
+    font-family: 'Baloo 2', cursive;
+}
+
+p {
+    font-size: 18px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+
+}
+
+nav {
+    margin-top: 1rem;
+    background-color: #F4CACC;
+    border-radius: 20px;
+    border: 2px solid rgb(206, 81, 144);
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+ul>li {
+    margin: 1rem;
+}
+
+nav li::before {
+    content: " ";
+    height: 2px;
+    width: 0%;
+    background-color: rgb(206, 81, 144);
+    display: flex;
+    position: relative;
+    top: 40px;
+    margin: 0;
+    left: 0;
+    transition: all 0.3s ease-out;
+}
+
+nav li:hover::before {
+    width: 100%;
+    ;
+}
+
+main {
+    margin-top: 1rem;
+}
+
+.banner {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 200px;
+    border-radius: 20px;
+    background-image: url(banner.jpg);
+    background-blend-mode: lighten;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    box-shadow: inset -20px 1px 30px 50px #F4CACC;
+    border: 3px solid rgb(206, 81, 144);
+    
+    animation-name: example;
+    animation-duration:2s;
+    animation-iteration-count:infinite
+
+}
+
+.bttn {
+    margin-bottom: 1em;
+    font-size: large;
+    border-radius: 17px;
+    background-color: rgb(219, 167, 175);
+    border-width: 5px;
+    width: 8rem;
+    height: 3rem;
+    animation: example 1s infinite;
+  
+  transition:all 0.3s;
+}
+
+@keyframes example {
+    0%   {border-color: rgb(214, 68, 68);}
+    25%  {border-color: rgb(255, 0, 217);}
+    50%  {border-color: rgb(160, 88, 58);}
+    100% {border-color: rgb(128, 0, 0);}
+  }
+  
+  .bttn:hover{
+    transform: scale(1.2);
+}
+
+h1 {
+    font-size: 86%;
+}
+
+.submain {
+    margin-top: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.submain article {
+    padding: 2rem;
+    border-radius: 8px;
+    border: 2px solid rgb(206, 81, 144);
+    width: 23rem;
+}
+
+.submain article:hover {
+    cursor: pointer;
+    box-shadow: -4px -4px 14px 2px rgba(89, 89, 89, 0.36);
+}
+
+article img {
+    width: inherit;
+    height: 330px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 10px 3px rgba(208, 93, 151, 0.5);
+}
+
+footer {
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+footer p {
+    font-size: 17px;
+}
+
+#footer_logo {
+    width: 200px;
+    height: 50px;
+}
